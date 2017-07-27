@@ -42,13 +42,13 @@ var gulp = require('gulp');
 var deleteLines = require('gulp-delete-lines');
  
 gulp.task('default', function () {
-gulp.src(['./bower_components/xtrareportsjs/js/dx-designer.js', './bower_components/xtrareportsjs/js/web-document-viewer.js'])
-.pipe(deleteLines({
-'filters': [
-/var DevExpress;/i
-]
-}))
-.pipe(gulp.dest('./bower_components/xtrareportsjs/js'));
+    gulp.src(['./bower_components/xtrareportsjs/js/dx-designer.js', './bower_components/xtrareportsjs/js/web-document-viewer.js'])
+        .pipe(deleteLines({
+            'filters': [
+                /var DevExpress;/i
+            ]
+        }))
+        .pipe(gulp.dest('./bower_components/xtrareportsjs/js'));
 });
 ```
 See the [5461fba](https://github.com/GoshaFighten/ReportsAngularCore/commit/5461fbae93e598ba9aaf4429a0598489e6942672) commit for details.
