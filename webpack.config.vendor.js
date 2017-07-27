@@ -32,6 +32,8 @@ module.exports = (env) => {
                 'event-source-polyfill',
                 'jquery',
                 'zone.js',
+                'devextreme/dist/css/dx.common.css',
+                'devextreme/dist/css/dx.light.css',
             ]
         },
         output: {

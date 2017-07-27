@@ -43,7 +43,9 @@
     "webpack": "2.5.1",
     "webpack-hot-middleware": "2.18.0",
     "webpack-merge": "4.1.0",
-    "zone.js": "0.8.10"
+    "zone.js": "0.8.10",
+    "devextreme": "^17.1.4",
+    "devextreme-angular": "^17.1.4"
   },
   "devDependencies": {
     "@types/chai": "3.5.2",
