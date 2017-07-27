@@ -16,58 +16,41 @@
   <ItemGroup>
     <!-- Files not to show in IDE -->
     <None Remove="yarn.lock" />
+    <Compile Remove="DLLs\**" />
 
     <!-- Files not to publish (note that the 'dist' subfolders are re-added below) -->
     <Content Remove="ClientApp\**" />
+    <Content Remove="DLLs\**" />
+    <EmbeddedResource Remove="DLLs\**" />
+    <None Remove="DLLs\**" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="DevExpress.Charts.v17.1.Core">
-      <HintPath>C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework\DevExpress.Charts.v17.1.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.CodeParser.v17.1">
-      <HintPath>C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework\DevExpress.CodeParser.v17.1.dll</HintPath>
+      <HintPath>DLLs\DevExpress.Charts.v17.1.Core.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Data.v17.1">
-      <HintPath>C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework\DevExpress.Data.v17.1.dll</HintPath>
+      <HintPath>DLLs\DevExpress.Data.v17.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.DataAccess.v17.1">
-      <HintPath>C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework\DevExpress.DataAccess.v17.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Office.v17.1.Core">
-      <HintPath>C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework\DevExpress.Office.v17.1.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Pdf.v17.1.Core">
-      <HintPath>C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework\DevExpress.Pdf.v17.1.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.PivotGrid.v17.1.Core">
-      <HintPath>C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework\DevExpress.PivotGrid.v17.1.Core.dll</HintPath>
+      <HintPath>DLLs\DevExpress.DataAccess.v17.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Printing.v17.1.Core">
-      <HintPath>C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework\DevExpress.Printing.v17.1.Core.dll</HintPath>
+      <HintPath>DLLs\DevExpress.Printing.v17.1.Core.dll</HintPath>
     </Reference>
-    <Reference Include="DevExpress.RichEdit.v17.1.Core">
-      <HintPath>C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework\DevExpress.RichEdit.v17.1.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.RichEdit.v17.1.Export">
-      <HintPath>C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework\DevExpress.RichEdit.v17.1.Export.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.Sparkline.v17.1.Core">
-      <HintPath>C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework\DevExpress.Sparkline.v17.1.Core.dll</HintPath>
+    <Reference Include="DevExpress.Web.v17.1">
+      <HintPath>DLLs\DevExpress.Web.v17.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Xpo.v17.1">
-      <HintPath>C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework\DevExpress.Xpo.v17.1.dll</HintPath>
+      <HintPath>DLLs\DevExpress.Xpo.v17.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraCharts.v17.1">
-      <HintPath>C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework\DevExpress.XtraCharts.v17.1.dll</HintPath>
-    </Reference>
-    <Reference Include="DevExpress.XtraGauges.v17.1.Core">
-      <HintPath>C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework\DevExpress.XtraGauges.v17.1.Core.dll</HintPath>
+      <HintPath>DLLs\DevExpress.XtraCharts.v17.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraReports.v17.1">
-      <HintPath>C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework\DevExpress.XtraReports.v17.1.dll</HintPath>
+      <HintPath>DLLs\DevExpress.XtraReports.v17.1.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraReports.v17.1.Web">
-      <HintPath>C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework\DevExpress.XtraReports.v17.1.Web.dll</HintPath>
+      <HintPath>DLLs\DevExpress.XtraReports.v17.1.Web.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
