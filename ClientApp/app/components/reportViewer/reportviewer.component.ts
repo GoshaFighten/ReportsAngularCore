@@ -41,15 +41,14 @@ export class ReportViewerComponent implements AfterViewInit {
     report: ElementRef;
 
     ngAfterViewInit() {
-        const backendPrefix = 'http://localhost:50720/';
-        window["DevExpress"].Report.Preview.HandlerUri = backendPrefix + 'api/WebDocumentViewerWebApi';
+        window["DevExpress"].Report.Preview.HandlerUri = '/DXXRDV';
         const container = this.renderer.createElement("div");
         container.innerHTML = WebDocumentViewer;
         this.renderer.appendChild(this.report.nativeElement, container);
         const viewerModel = ko.observable(null);
         viewerModel.subscribe(function (newVal) {
             if (newVal) {
-                newVal.reportPreview.openReport("SampleReport");
+                newVal.reportPreview.openReport("Categories");
             }
         })
         ko.applyBindings({
