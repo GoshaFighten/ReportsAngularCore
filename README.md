@@ -1,5 +1,5 @@
 This example illustrates how to use DevExpress XtraReports in an Angular application with the ASP.NET Core .NET Framework backend.
- 
+
 <b>Installation</b>
 Clone this repository to your folder:
  
@@ -14,7 +14,7 @@ Once the dependencies are restored, create the client-side vendor bundle:
 ```
 "node_modules/.bin/webpack" --config webpack.config.vendor.js
 ```
- 
+
 <b>Step by step</b>
 
 1. Create an Angular project from [https://github.com/aspnet/JavaScriptServices](https://github.com/aspnet/JavaScriptServices).
