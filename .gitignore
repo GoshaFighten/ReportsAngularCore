@@ -235,3 +235,6 @@ _Pvt_Extensions
 
 # FAKE - F# Make
 .fake/
+/bower_components
+/bower_components
+/wwwroot/lib
